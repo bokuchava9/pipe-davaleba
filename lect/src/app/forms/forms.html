@@ -1,0 +1,28 @@
+<form [formGroup]="formGroup" > 
+    
+<label >name</label>
+<input formControlName="name">
+
+
+<label >date of birth</label>
+
+
+<input formControlName="birthDate">
+
+
+<label for="fee">fee</label>
+<input formControlName="fee">
+
+
+<h3>results</h3>
+
+<p>{{studentData.name | uppercase}}</p>
+<p>{{studentData.birthDate | date}}</p>
+<p>{{studentData.fee | currency:"USD"}}</p>
+
+
+
+<h2>json output</h2>
+
+<p>{{studentData | json}}</p>
+</form>
